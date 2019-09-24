@@ -1,0 +1,158 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- DatePicker -->
+        <div class="col">
+            <div class="text-center">
+            <h4>pick a day...</h4>
+            <link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap/datepicker/bs-datepicker.css">
+            <bs-datepicker-inline [bsValue]="bsInlineValue" (bsValueChange)="onValueChange($event)" bsDatepicker
+                [minDate]="minDate" [maxDate]="maxDate">
+            </bs-datepicker-inline>
+        </div>
+        </div>
+        <!-- Time Table -->
+        <div class="col-8">
+            <h4 class="text-center">{{data | date:'fullDate'}}</h4>
+            <table id="timetable" class="table table-bordered">
+                <tr>
+                    <th>Time</th>
+                    <th>08.00</th>
+                    <th>09.00</th>
+                    <th>10.00</th>
+                    <th>11.00</th>
+                    <th>12.00</th>
+                    <th>13.00</th>
+                    <th>14.00</th>
+                    <th>15.00</th>
+                    <th>16.00</th>
+                </tr>
+                <tr>
+                    <th id="r401">0401</th>
+                    <td id="r401am8" title="Room 0401, 8.00am to 9.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r401am9" title="Room 0401, 9.00am to 10.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r401am10" title="Room 0401, 10.00am to 11.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r401am11" title="Room 0401, 11.00am to 12.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r401pm12" title="Room 0401, 12.00pm to 1.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r401pm1" title="Room 0401, 1.00pm to 2.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r401pm2" title="Room 0401, 2.00pm to 3.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r401pm3" title="Room 0401, 3.00pm to 4.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r401pm4" title="Room 0401, 4.00pm to 5.00pm - {{data | date:'fullDate'}}"></td>
+
+                </tr>
+
+                <tr>
+                    <th id="r407">0407</th>
+                    <td id="r407am8" title="Room 0407, 8.00am to 9.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r407am9" title="Room 0407, 9.00am to 10.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r407am10" title="Room 0407, 10.00am to 11.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r407am11" title="Room 0407, 11.00am to 12.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r407pm12" title="Room 0407, 12.00pm to 1.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r407pm1" title="Room 0407, 1.00pm to 2.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r407pm2" title="Room 0407, 2.00pm to 3.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r407pm3" title="Room 0407, 3.00pm to 4.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r407pm4" title="Room 0407, 4.00pm to 5.00pm - {{data | date:'fullDate'}}"></td>
+
+                </tr>
+
+                <tr>
+                    <th id="r408">0408</th>
+                    <td id="r408am8" title="Room 0408, 8.00am to 9.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r408am9" title="Room 0408, 9.00am to 10.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r408am10" title="Room 0408, 10.00am to 11.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r408am11" title="Room 0408, 11.00am to 12.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r408pm12" title="Room 0408, 12.00pm to 1.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r408pm1" title="Room 0408, 1.00pm to 2.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r408pm2" title="Room 0408, 2.00pm to 3.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r408pm3" title="Room 0408, 3.00pm to 4.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r408pm4" title="Room 0408, 4.00pm to 5.00pm - {{data | date:'fullDate'}}"></td>
+
+                </tr>
+                <tr>
+                    <th id="r409">0409</th>
+                    <td id="r409am8" title="Room 0409, 8.00am to 9.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r409am9" title="Room 0409, 9.00am to 10.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r409am10" title="Room 0409, 10.00am to 11.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r409am11" title="Room 0409, 11.00am to 12.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r409pm12" title="Room 0409, 12.00pm to 1.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r409pm1" title="Room 0409, 1.00pm to 2.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r409pm2" title="Room 0409, 2.00pm to 3.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r409pm3" title="Room 0409, 3.00pm to 4.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r409pm4" title="Room 0409, 4.00pm to 5.00pm - {{data | date:'fullDate'}}"></td>
+
+                </tr>
+                <tr>
+                    <th id="r502">0502</th>
+                    <td id="r502am8" title="Room 0502, 8.00am to 9.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r502am9" title="Room 0502, 9.00am to 10.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r502am10" title="Room 0502, 10.00am to 11.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r502am11" title="Room 0502, 11.00am to 12.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r502pm12" title="Room 0502, 12.00pm to 1.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r502pm1" title="Room 0502, 1.00pm to 2.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r502pm2" title="Room 0502, 2.00pm to 3.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r502pm3" title="Room 0502, 3.00pm to 4.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r502pm4" title="Room 0502, 4.00pm to 5.00pm - {{data | date:'fullDate'}}"></td>
+
+                </tr>
+                <tr>
+                    <th id="r503">0503</th>
+                    <td id="r503am8" title="Room 0503, 8.00am to 9.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r503am9" title="Room 0503, 9.00am to 10.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r503am10" title="Room 0503, 10.00am to 11.00am - {{data | date:'fullDate'}}"></td>
+                    <td id="r503am11" title="Room 0503, 11.00am to 12.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r503pm12" title="Room 0503, 12.00pm to 1.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r503pm1" title="Room 0503, 1.00pm to 2.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r503pm2" title="Room 0503, 2.00pm to 3.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r503pm3" title="Room 0503, 3.00pm to 4.00pm - {{data | date:'fullDate'}}"></td>
+                    <td id="r503pm4" title="Room 0503, 4.00pm to 5.00pm - {{data | date:'fullDate'}}"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Rules -->
+        <div class="col">
+            <p><strong>Please note:</strong></p>
+
+            <ul>
+                <li>Rooms are for use by groups of 2 or more people</li>
+                <li>Bookings can be made up to 2 weeks in advance</li>
+                <li>If you are 15 minutes late, other clients may use the room</li>
+                <li>Keep noise to a minimum</li>
+                <li>Do not leave valuables unattended.</li>
+                <li>Leave the room promptly and in a tidy condition</li>
+                <li>Library staff may cancel bookings that do not honour these conditions</li>
+            </ul>
+
+            <p>
+                <strong>Please contact the ICT staff on 000-000-0000 or staff@ict.psu.ac.th for
+                    any
+                    issues
+                </strong>
+            </p>
+        </div>
+        <div class="col-8">
+            <!-- form starts -->
+            <form novalidate [formGroup]="booking" (ngSubmit)="onSubmit()">
+                <legend><strong>Booking Details</strong></legend>
+                <p *ngFor="let selectedCell of selectedCells">{{selectedCell}}</p>
+                <fieldset>
+                    <!-- <div>
+                        <input type="text" class="form-control" formControlName="rid" value="">
+                    </div> -->
+                    <div class="form-group">
+                        <legend><strong>Occupant's Information</strong></legend>
+                        <label>Your Name</label>
+                        <input type="text" class="form-control" formControlName="userName">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Phone Number</label>
+                        <input type="text" class="form-control" formControlName="tel">
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <!-- form ends -->
+        </div>
+    </div>
+</div>
